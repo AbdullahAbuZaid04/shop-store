@@ -1,0 +1,113 @@
+.not-found-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+  padding: 2rem 1rem;
+  direction: rtl;
+}
+
+.not-found-container {
+  max-width: 600px;
+  width: 100%;
+}
+
+.not-found-content {
+  background: white;
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.error-code {
+  font-size: 6rem;
+  font-weight: 700;
+  color: red;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.error-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.error-description {
+  color: #6c757d;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.home-btn,
+.products-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.home-btn {
+  background: #007bff;
+  color: white;
+}
+
+.home-btn:hover {
+  background: #0056b3;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.products-btn {
+  background: #28a745;
+  color: white;
+}
+
+.products-btn:hover {
+  background: #218838;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.btn-icon {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .error-code {
+    font-size: 4rem;
+  }
+
+  .error-title {
+    font-size: 1.5rem;
+  }
+
+  .error-description {
+    font-size: 1rem;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .home-btn,
+  .products-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
